@@ -12,17 +12,6 @@
         }
     ],
 
-    "repositories": [
-        {
-            "type": "path",
-            "url": "/home/scorninpc/Desktop/Bruno/Github/slim-smarty-view"
-        },
-        {
-            "type": "path",
-            "url": "/home/scorninpc/Desktop/Bruno/Github/slim-mvc"
-        }
-    ],
-
     "require": {
         "slim/slim": "^4.0",
         "scorninpc/slim-mvc": "^1.0",
