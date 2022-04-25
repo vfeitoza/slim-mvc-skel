@@ -107,7 +107,7 @@ In order to use modules, just add `module` variable to route. Thats will add a u
 ],
 ```
 
-This will look for controller in `Application/Main/Controllers/indexController`, action `helloAction()`, and will look for template in `Application\Main\Views\index\hello.tpl`
+This will look for controller in `Application/Main/Controllers/indexController.php`, action `helloAction()`, and will look for template in `Application/Main/Views/index/hello.tpl`
 
 ## Contributing
 
