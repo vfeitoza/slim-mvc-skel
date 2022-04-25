@@ -62,12 +62,12 @@ Routes are located on application/routes.php files. This structure are simple:
 
 #### Controllers
 
-Now you need to create the controller, located on Controller directory. The patter are create with `nameController.php`, like `productsController.php` or `pagesController.php` 
+Now you need to create the controller, located on Controller directory. The pattern are create with `nameController.php`, like `productsController.php` or `pagesController.php` 
 The class must extends `\Slim\Mvc\Controller` to create provide the view and create location of template files
 
 #### Actions
 
-With controller on hand, new its time to create the action, who will trigged on page access. When user access the route, the skel will call `nameController::nameAction()` method. So, if you have a route that call products controller, and details action, the skel will trigger `productsController::detailsAction()`
+With controller on hands, now its time to create the action, who will trigged on page access. When user access the route, the skel will call `nameController::nameAction()` method. So, if you have a route that call products controller, and details action, the skel will trigger `productsController::detailsAction()`
 
 In that example, your controller will be something like:
 
