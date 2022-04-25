@@ -1,0 +1,36 @@
+{
+    "name": "scorninpc/slim-mvc-skel",
+    "type": "library",
+    "description": "Skeleton of Slim Framework 4 with Smarty ",
+    "keywords": ["slim","framework","slim 4","bootstrap","mvc", "smarty","skel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Pitteli Gonçalves",
+            "email": "scorninpc@php.net",
+            "homepage": "https://andor.com.br"
+        }
+    ],
+
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/scorninpc/Desktop/Bruno/Github/slim-smarty-view"
+        },
+        {
+            "type": "path",
+            "url": "/home/scorninpc/Desktop/Bruno/Github/slim-mvc"
+        }
+    ],
+
+    "require": {
+        "slim/slim": "^4.0",
+        "scorninpc/slim-mvc": "^1.0",
+        "slim/psr7": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "application"
+        }
+    }
+}
