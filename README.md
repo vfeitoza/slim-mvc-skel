@@ -1,6 +1,6 @@
 <!-- [![License](http://poser.pugx.org/scorninpc/slim-mvc-skel/license)](https://packagist.org/packages/scorninpc/slim-mvc-skel) -->
 [![Version](http://poser.pugx.org/scorninpc/slim-mvc-skel/version?style=flat-square)](https://packagist.org/packages/scorninpc/slim-mvc-skel)
-[![Total Downloads](http://poser.pugx.org/scorninpc/slim-mvc-skel/downloads?style=flat-square)](https://packagist.org/packages/scorninpc/slim-mvc-skel)
+[![Total Downloads](http://poser.pugx.org/scorninpc/slim-mvc/downloads?style=flat-square)](https://packagist.org/packages/scorninpc/slim-mvc-skel)
 ![GitHub](https://img.shields.io/github/license/scorninpc/slim-mvc-skel)
 ![GitHub issues](https://img.shields.io/github/issues-raw/scorninpc/slim-mvc-skel)
 
