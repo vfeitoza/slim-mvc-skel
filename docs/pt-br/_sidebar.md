@@ -18,3 +18,7 @@
 
 	- [CRUD](examples_crud.md)
 
+- Outros
+	
+	- [Agradecimentos](thanks.md)
+
