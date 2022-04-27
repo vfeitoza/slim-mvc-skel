@@ -8,6 +8,7 @@ return [
 		'pattern' => "/hello",
 		'type' => ['GET'],
 		'defaults' => [
+			// 'module' => "main",
 			'controller' => "index",
 			'action' => "hello",
 		],
@@ -18,6 +19,7 @@ return [
 		'pattern' => "/[{controller}[/{action}[/{params:.*}]]]",
 		'type' => ['GET'],
 		'defaults' => [
+			// 'module' => "main",
 			'controller' => "index",
 			'action' => "index",
 		],

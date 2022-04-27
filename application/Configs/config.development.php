@@ -5,6 +5,7 @@ return [
 	'application' => [
 		'name' => "Application",
 		'location' => dirname(__FILE__) . "/..",
+		// 'modules_location' => dirname(__FILE__) . "/../Modules",
 	],
 
 	'smarty' => [
