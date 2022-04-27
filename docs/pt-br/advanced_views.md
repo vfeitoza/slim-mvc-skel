@@ -40,3 +40,4 @@ Como adicionar um template manualmente, que não pegue o template padrão confor
 ## Customizações
 
 Onde ele lê e cria os caminhos, a pra modificar algum padrão, ou alguma outra estrutura de diretórios
+Como configurar o caminho dos diretórios de compilação e cache

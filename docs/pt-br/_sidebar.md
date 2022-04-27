@@ -1,4 +1,4 @@
-<!-- docs/_sidebar.md -->
+ <!-- docs/_sidebar.md -->
 - Inicio
 
 	- [Introdução](README.md)
@@ -14,9 +14,10 @@
 	<!-- - [Modulos](advanced_modules.md) -->
 	<!-- - [Modificando Padrões](advanced_patterns.md) -->
 
-- Exemplos
+- Receitas
 
-	- [CRUD](examples_crud.md)
+	- [Mudando o Application](cookbook_routes.md)
+	- [CRUD Exemplo](cookbook_crud.md)
 
 - Outros
 	
