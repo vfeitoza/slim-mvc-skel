@@ -13,6 +13,7 @@ o que são as actions e qual a relação dela com as rotas, como são criadas e 
 ## Modulos
 
 o que são modulos, exemplo de site e painel, como criar, como modificar as rotas
+como mudar o caminho do diretorio dos modules, mudando o autoload e o config
 
 ## Rota padrão
 
