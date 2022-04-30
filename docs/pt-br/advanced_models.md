@@ -1,6 +1,6 @@
 # Models
 
-Como funciona, qual o sistema, etc
+Como funciona, qual o sistema, pra que serve um model, etc
 
 ## Configuração
 

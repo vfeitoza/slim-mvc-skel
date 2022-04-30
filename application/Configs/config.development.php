@@ -26,7 +26,7 @@ return [
 		'driver' => 'pgsql',
 		'host' => "localhost",
 		'username' => "postgres",
-		'password' => "",
+		'password' => "123mudar",
 		'database' => "slim_skel",
 		// 'charset' => 'utf8',
 		// 'collation' => 'utf8_unicode_ci',
