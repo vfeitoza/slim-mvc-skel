@@ -11,6 +11,7 @@
 	- [Rotas](advanced_routes.md)
 	- [Controllers](advanced_controller.md)
 	- [Views](advanced_views.md)
+	- [Models](advanced_models.md)
 	<!-- - [Modulos](advanced_modules.md) -->
 	<!-- - [Modificando Padrões](advanced_patterns.md) -->
 
