@@ -29,6 +29,14 @@ $container->set("view", function($container) use ($config) {
 	return $view;
 });
 
+// Initialize database
+if($config['db']['enabled']) {
+	$database = new \Illuminate\Database\Capsule\Manager();
+	$database->addConnection($config['db']);
+	$database->setAsGlobal();
+	$database->bootEloquent();
+}
+
 // Set the config
 $container->set("config", function($container) use ($config) {
 	return $config;
