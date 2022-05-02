@@ -25,6 +25,11 @@ falar onde ta o template.tpl
 
 como funciona a assinatura de variaveis, e como usa-la
 
+## Variaveis Pré definidas
+
+todas começam com __
+`$__basePath`, que contem o caminho relativo do servidor
+
 ## A variavel $local_content
 
 como funciona essa variavel, como ela precisa ser inclusa, e quais as limitações
