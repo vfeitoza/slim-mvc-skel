@@ -35,6 +35,7 @@ $container->set("view", function($container) use ($config) {
 	// Create smarty view
 	$view = new \Slim\Views\Smarty($config['smarty']);
 
+	// Return view object
 	return $view;
 });
 

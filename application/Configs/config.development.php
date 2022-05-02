@@ -6,7 +6,7 @@ return [
 		'name' => "Application",
 		'location' => dirname(__FILE__) . "/..",
 		// 'modules_location' => dirname(__FILE__) . "/../Modules",
-		// 'basePath' => "/web/path/to/slim_skel/public_html"
+		// 'basepath' => "/web/path/to/slim_skel/public_html"
 	],
 
 	'smarty' => [
