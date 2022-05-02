@@ -6,6 +6,7 @@ return [
 		'name' => "Application",
 		'location' => dirname(__FILE__) . "/..",
 		// 'modules_location' => dirname(__FILE__) . "/../Modules",
+		// 'basePath' => "/web/path/to/slim_skel/public_html"
 	],
 
 	'smarty' => [
@@ -26,7 +27,7 @@ return [
 		'driver' => 'pgsql',
 		'host' => "localhost",
 		'username' => "postgres",
-		'password' => "123mudar",
+		'password' => "",
 		'database' => "slim_skel",
 		// 'charset' => 'utf8',
 		// 'collation' => 'utf8_unicode_ci',

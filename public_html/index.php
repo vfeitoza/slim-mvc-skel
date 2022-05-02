@@ -20,6 +20,15 @@ $container = new \DI\Container();
 // Create the app
 $app = \Slim\Factory\AppFactory::create();
 
+// Define basepath if it's not defined on config
+if(!isset($config['application']['basepath'])) {
+	$config['application']['basepath'] = str_replace($_SERVER['DOCUMENT_ROOT'], "", dirname($_SERVER['SCRIPT_NAME']));
+	if($config['application']['basepath'] == "/") {
+		$config['application']['basepath'] = "";
+	}
+}
+$app->setBasePath($config['application']['basepath']);
+
 // Set view in Container
 $container->set("view", function($container) use ($config) {
 
