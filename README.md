@@ -46,13 +46,14 @@ To create a new page, you need:
 
 #### Routes
 
-Routes are located on application/routes.php files. This structure are simple:
+Routes are located on application/configs/routes.php files. This structure are simple:
 
-```
-'test' => [                                     // Name of route
-	'pattern' => "/hello[/{somevar}]",      // URL
-	'type' => ['GET'],                      // Type
+```php
+'test' => [                             // Name of route
+	'pattern' => "/hello[/{somevar}]",  // URL
+	'type' => ['GET'],                  // Type
 	'defaults' => [
+		'module' => "main",             // Controller
 		'controller' => "index",        // Controller
 		'action' => "hello",            // Action
 		'somevar' => 1                  // Some parameter, default if not passed on url
@@ -62,8 +63,8 @@ Routes are located on application/routes.php files. This structure are simple:
 
 #### Controllers
 
-Now you need to create the controller, located on Controller directory. The pattern are create with `nameController.php`, like `productsController.php` or `pagesController.php` 
-The class must extends `\Slim\Mvc\Controller` to create provide the view and create location of template files
+Now you need to create the controller, located on Controller directory of the module. The pattern are create with `nameController.php`, like `productsController.php` or `pagesController.php` 
+The class must extends `\Slim\Mvc\Controller` to provide the view and create location of template files
 
 #### Actions
 
@@ -71,10 +72,10 @@ With controller on hands, now its time to create the action, who will trigged on
 
 In that example, your controller will be something like:
 
-```
+```php
 <?php
 
-namespace Application\Controllers;
+namespace Application\Main\Controllers;
 
 class productsController extends \Slim\Mvc\Controller
 {
@@ -88,18 +89,18 @@ class productsController extends \Slim\Mvc\Controller
 
 #### Views
 
-This skel will use the pattern ControllerName + ActionName to create a path of template file, located on `Views` directory. So on the example above, you will create the file `application/Views/products/details.tpl` to store your HTML of this page, who will added to `application/Views/layouts/template.tpl` layout content.
+This skel will use the pattern ControllerName + ActionName to create a path of template file, located on `Views` directory. So on the example above, you will create the file `application/modules/Main/Views/products/details.tpl` to store your HTML of this page, who will added to `application/modules/Main/Views/layouts/template.tpl` layout content.
 
 #### Modules
 
-In order to use modules, just add `module` variable to route. Thats will add a up directory in reference of module variable. Something like:
+Now this skell use modules as default, but if you want to remove modules, change routes to remove `modules` variable from routes. Something like:
 
-```
+```php
 'test' => [                                     // Name of route
 	'pattern' => "/hello[/{somevar}]",      // URL
 	'type' => ['GET'],                      // Type
 	'defaults' => [
-		'module' => "main",             // Module
+		//'module' => "main",           // Module
 		'controller' => "index",        // Controller
 		'action' => "hello",            // Action
 		'somevar' => 1                  // Some parameter, default if not passed on url
@@ -107,11 +108,31 @@ In order to use modules, just add `module` variable to route. Thats will add a u
 ],
 ```
 
-This will look for controller in `Application/Main/Controllers/indexController.php`, action `helloAction()`, and will look for template in `Application/Main/Views/index/hello.tpl`
+And need to remove module directory folder from `application/configs/config.development.php`. Something like:
+
+```php
+	'application' => [
+		'name' => "Application",
+		'location' => dirname(__FILE__) . "/..",
+		// 'modules_location' => dirname(__FILE__) . "/../modules",
+	],
+```
+
+Now you need to change `composer.json`` to change directory of your classes:
+
+```json
+	"autoload": {
+        "psr-4": {
+            "Application\\": "application/"
+        }
+    }
+```
+
+This will look for controller in `application/Controllers/indexController.php`, action `helloAction()`, and will look for template in `application/Views/index/hello.tpl`
 
 ## Contributing
 
-If you want to help, just use it. Use issues tab to recomend anything that can help, like some config, some library like database, or anything usefull
+If you want to help, just use it. Use issues tab to recommend anything that can help, like some config, some library like database, or anything usefull
 
 ## Authors
 
