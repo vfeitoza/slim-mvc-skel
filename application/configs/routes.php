@@ -8,7 +8,7 @@ return [
 		'pattern' => "/hello",
 		'type' => ['GET'],
 		'defaults' => [
-			// 'module' => "main",
+			'module' => "main",
 			'controller' => "index",
 			'action' => "hello",
 		],
@@ -16,10 +16,10 @@ return [
 	
 	// default route
 	'default' => [
-		'pattern' => "/[{controller}[/{action}[/{params:.*}]]]",
+		'pattern' => "/[{module}[/{controller}[/{action}[/{params:.*}]]]]",
 		'type' => ['GET'],
 		'defaults' => [
-			// 'module' => "main",
+			'module' => "main",
 			'controller' => "index",
 			'action' => "index",
 		],

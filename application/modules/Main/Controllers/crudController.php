@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Controllers;
+namespace Application\Main\Controllers;
 
 class crudController extends \Slim\Mvc\Controller
 {
@@ -8,7 +8,7 @@ class crudController extends \Slim\Mvc\Controller
 	public function listAction()
 	{
 		// Create the model
-		$model = new \Application\Models\Test();
+		$model = new \Application\Main\Models\Test();
 		
 		// Fetch tests
 		$tests =  $model->get();
@@ -20,7 +20,7 @@ class crudController extends \Slim\Mvc\Controller
 	public function recordAction()
 	{
 		// Create the model
-		$model = new \Application\Models\Test();
+		$model = new \Application\Main\Models\Test();
 		
 		// Insert an record
 		// $idtest = $model->insert([

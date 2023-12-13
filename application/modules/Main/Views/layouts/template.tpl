@@ -11,7 +11,7 @@
 		<title>Hello, world!</title>
 	</head>
 	<body>
-		This is a application/Views/layouts/template.tpl
+		This is a application/modules/Main/Views/layouts/template.tpl
 		<hr>
 		{$layout_content}
 	</body>

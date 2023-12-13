@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Models;
+namespace Application\Main\Models;
 
 class Test extends \Slim\Mvc\Model
 {

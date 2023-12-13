@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Controllers;
+namespace Application\Main\Controllers;
 
 class indexController extends \Slim\Mvc\Controller
 {

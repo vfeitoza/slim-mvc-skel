@@ -5,7 +5,7 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
 
 // Get the config file
-$config = require(__DIR__ . "/../application/Configs/config.development.php");
+$config = require(__DIR__ . "/../application/configs/config.development.php");
 
 // Define a path to application directory
 defined("APPLICATION_PATH") || define("APPLICATION_PATH", realpath($config['application']['location']));
@@ -53,7 +53,7 @@ $container->set("config", function($container) use ($config) {
 });
 
 // Routes
-$routes = require(APPLICATION_PATH . "/Configs/routes.php");
+$routes = require(APPLICATION_PATH . "/configs/routes.php");
 $container->set("routes", $routes);
 foreach($routes as $name => $route) {
 	$app->map($route['type'], $route['pattern'], function (\Psr\Http\Message\ServerRequestInterface $request, \Psr\Http\Message\ResponseInterface $response, $args) use ($config) {

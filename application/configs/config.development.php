@@ -5,7 +5,7 @@ return [
 	'application' => [
 		'name' => "Application",
 		'location' => dirname(__FILE__) . "/..",
-		// 'modules_location' => dirname(__FILE__) . "/../Modules",
+		'modules_location' => dirname(__FILE__) . "/../modules",
 		// 'basepath' => "/web/path/to/slim_skel/public_html"
 	],
 
@@ -13,8 +13,8 @@ return [
 		'template_dir' => [
 			dirname(__FILE__) . "/../"
 		],
-		'compile_dir' =>  dirname(__FILE__) . "/../Tmp/templates_c",
-		'cache_dir' =>  dirname(__FILE__) . "/../Tmp/templates_c",
+		'compile_dir' =>  dirname(__FILE__) . "/../tmp/templates_c",
+		'cache_dir' =>  dirname(__FILE__) . "/../tmp/templates_c",
 		'caching' => FALSE,
 		'cache_lifetime' => 4600,
 		'force_compile' => TRUE,
