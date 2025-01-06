@@ -1,2 +1,4 @@
 composer.lock
 vendor/
+application/tmp/templates_c/*.php
+
